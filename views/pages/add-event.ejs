@@ -1,0 +1,20 @@
+		<% include ../partials/header %>
+			
+<div class="container">
+  <form action="/event/add" method="post">
+   <br> <div class="input-group">
+      <input id="email" type="text" class="form-control" name="name" placeholder="Enter Name">
+    </div><br>
+    <div class="input-group">
+      <textarea cols="30" rows="4" id="email" type="text" class="form-control" name="description" placeholder="Description"></textarea>
+    </div><br>
+   
+   
+    <div class="input-group">
+      <textarea cols="30" rows="4" class="form-control" name="location" placeholder="Location"></textarea>
+    </div><br>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+		<% include ../partials/footer %>

@@ -1,0 +1,21 @@
+		<% include ../partials/header %>
+			
+<div class="container">
+  <form action="/event/edit/" method="post">
+    <input type="hidden" name="id" value="<%= item[0].id %>">
+   <br> <div class="input-group">
+      <input id="email" type="text" class="form-control" name="name" value="<%= item[0].name %>" placeholder="Enter Name">
+    </div><br>
+    <div class="input-group">
+      <textarea cols="30" rows="4" id="email" type="text" class="form-control" name="description" placeholder="Description"><%= item[0].description %></textarea>
+    </div><br>
+   
+   
+    <div class="input-group">
+      <textarea cols="30" rows="4" class="form-control" name="location"  placeholder="Location"><%= item[0].location %></textarea>
+    </div><br>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+		<% include ../partials/footer %>
